@@ -1,5 +1,5 @@
-nei <- readRDS("data/summarySCC_PM25.rds")
-scc <- readRDS("data/Source_Classification_Code.rds")
+NEI <- readRDS("summarySCC_PM25.rds")
+SCC <- readRDS("Source_Classification_Code.rds")
 
 Emissionbyyear <- aggregate(NEI$Emissions, by=list(NEI$year), FUN= sum)
 
